@@ -64,6 +64,7 @@ cmake .. -LAH -G "NMake Makefiles"                                              
     -DWITH_OPENNI=0                                                                 ^
     -DWITH_FFMPEG=1                                                                 ^
     -DWITH_VTK=0                                                                    ^
+    -DWITH_QT=5                                                                     ^
     -DINSTALL_C_EXAMPLES=0                                                          ^
     -DOPENCV_EXTRA_MODULES_PATH=%UNIX_SRC_DIR%/opencv_contrib-%PKG_VERSION%/modules ^
     -DCMAKE_BUILD_TYPE="Release"                                                    ^
