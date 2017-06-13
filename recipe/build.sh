@@ -106,6 +106,7 @@ cmake .. -LAH                                                             \
     -DWITH_GPHOTO2=0                                                      \
     -DINSTALL_C_EXAMPLES=0                                                \
     -DOPENCV_EXTRA_MODULES_PATH="../opencv_contrib-$PKG_VERSION/modules"  \
+    -DBUILD_opencv_cvv=OFF                                                \
     -DCMAKE_BUILD_TYPE="Release"                                          \
     -DCMAKE_SKIP_RPATH:bool=ON                                            \
     -DCMAKE_INSTALL_PREFIX=$PREFIX                                        \
