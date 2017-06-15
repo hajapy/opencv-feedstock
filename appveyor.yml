@@ -11,7 +11,8 @@ environment:
 
   BINSTAR_TOKEN:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
-    secure: /XxwAsgp0EItmAhoPSov/h0BtAFNj2BuuEqnhgaP9l7Rw2yLBM1lD+3q4LvpVm3B
+    # secure: /XxwAsgp0EItmAhoPSov/h0BtAFNj2BuuEqnhgaP9l7Rw2yLBM1lD+3q4LvpVm3B
+    ha-4c30c39e-c59f-4fde-b5e0-676a87c6a8d8
 
   matrix:
     - TARGET_ARCH: x86
@@ -113,4 +114,4 @@ build: off
 test_script:
     - "%CMD_IN_ENV% conda build recipe --quiet"
 deploy_script:
-    - cmd: upload_or_check_non_existence .\recipe conda-forge --channel=main
+    - cmd: upload_or_check_non_existence .\recipe hajapy --channel=main
