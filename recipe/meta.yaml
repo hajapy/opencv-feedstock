@@ -20,7 +20,7 @@ source:
 
 build:
   # remember to set this back, only incremented for debug builds
-  number: 205
+  number: 206
   features:                    # [not win]
     - blas_{{ blas_variant }}  # [not win]
 
